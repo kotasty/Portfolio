@@ -1,0 +1,147 @@
+
+@media screen and (max-width:480px){
+
+
+* {
+  padding:0;
+  margin:0;
+}
+/****/
+body {
+  padding:0;
+  margin:0;
+  width: 100%;
+  display: inline-block;
+  background-color: white;
+}
+
+.wrapper {
+  width: 100%;
+}
+/****/
+#header {
+  z-index: 9999;
+  position: fixed;
+  top:0;
+  left:0;
+  height: 60px;
+  width: 100vw;
+}
+
+.header-logo {
+  z-index: 9999;
+  height: 70px;
+  width: 100%;
+  display:inline-block;
+  text-align: center;
+}
+/**メニューアイコン**/
+a {
+  text-decoration: none;
+}
+.menu-icon {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: block;
+  height: 70px;
+  width: 70px;
+}
+
+.menu-icon div {
+  height: 2px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,0);
+  transition: 0.5s;
+}
+.menu-icon div:nth-of-type(1){
+  transform: translate(-50%,-15px);
+}
+
+.menu-icon div:nth-of-type(3){
+  transform: translate(-50%,15px);
+}
+
+.menu-icon:active div:nth-of-type(1){
+  transform: rotate(135deg) translate(-50%,0px);
+  transform-origin: 0% 50%;
+}
+
+.menu-icon:active div:nth-of-type(2){
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.menu-icon:active div:nth-of-type(3){
+  transform: rotate(-135deg) translate(-50%,0px);
+  transform-origin: 0% 50%;
+}
+
+/**ナビゲーション**/
+nav {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-list {
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  text-align: center;
+  background-color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+
+.nav-item a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: white;
+ 
+}
+/****/
+/**トップ**/
+.top-wrapper {
+  position: relative;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+}
+
+.top-image {
+  position: absolute;
+  top:70px;
+  
+}
+
+.scroll-icon {
+  position: absolute;
+  top:80px;
+}
+/****/
+/****/
+/****/
+/****/
+
+}
