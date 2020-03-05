@@ -1,11 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="Portfolio.css">
-    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+   
+  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   </head>
   <body>
@@ -35,7 +40,7 @@
 
         <!--メールアイコン-->
         <div class="mail">
-          <a href="mailto:kotasty2@icloud.com" class="mail-icon fas fa-at fa-2x"></i></a>
+          <a href="mailto:kotasty2@icloud.com" class="mail-icon fas fa-envelope fa-2x"></i></a>
         </div>
         
       
@@ -44,12 +49,33 @@
       </div>
 
       <!--トップ-->
-      <div id="top-wrapper hero">
-        <div class="top-image">
-          <img src="img/top-image.png">
+      <div id="top hero">
+
+        <div class="top-slider">
+          <ul id="ts-color">
+            <li><img src="img/slide-item1.png" class="ts-item" width="250px"></li>
+            <li><img src="img/slide-item2.png" class="ts-item" width="250px"></li>
+            <li><img src="img/slide-item3.png" class="ts-item" width="250px"></li>
+            <li><img src="img/slide-item4.png" class="ts-item" width="250px"></li>
+            <li><img src="img/slide-item5.png" class="ts-item" width="250px"></li>
+            
+          </ul>
+
+          <ul id="ts-monotone">
+            <li><img src="img/slide-item4.png" class="ts-item" width="250px"></li>
+            <li><img src="img/slide-item5.png" class="ts-item" width="250px"></li>
+            <li><img src="img/slide-item1.png" class="ts-item" width="250px"></li>
+            <li><img src="img/slide-item2.png" class="ts-item" width="250px"></li>
+            <li><img src="img/slide-item3.png" class="ts-item" width="250px"></li>
+          </ul>
+
         </div>
 
-        <div class="scroll-icon">
+        <div class="top-text">
+          <img src="img/top-text.png">
+        </div>
+
+        <div class="sroll-icon">
           <img src="img/scroll-icon.png">
         </div>
   
@@ -69,5 +95,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="Portfolio.js"></script>
+    <script src="slick.js"></script>
+    <script src="slick/slick.min.js"></script>
   </body>
 </html>
